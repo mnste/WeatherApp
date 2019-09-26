@@ -28,20 +28,17 @@ namespace WeatherApp
         {
             using (WebClient web = new WebClient())
             {
-                string url = string.Format("http://api.openweathermap.org/data/2.5/weather?id=588409&appid=8e4dcb3a1ab522971456c7b7bbfb55da&units=metric");
+                string cityCode = "588409";
+                string apiKey = "8e4dcb3a1ab522971456c7b7bbfb55da";
+                string uri = string.Format("http://api.openweathermap.org/data/2.5/weather?id={0}&appid={1}&units=metric", cityCode,apiKey);
+                var json = web.DownloadString(uri);
+                WeatherDetails.root outPut  = JsonConvert.DeserializeObject<WeatherDetails.root>(json);
 
-                var json = web.DownloadString(url);
-
-                var result = JsonConvert.DeserializeObject<WeatherDetails.root>(json);
-
-                WeatherDetails.root outPut = result;
 
                 lbl_City.Text = outPut.name + ", " + string.Format("{0}", outPut.sys.country);
 
                 double temp = outPut.main.temp;
                 lbl_temp.Text = String.Format("{0} \u00B0C", Convert.ToString(Math.Round(temp,0)));
-                //lbl_temp.Text = (string.Format("{0}\u00B0", outPut.main.temp));
-
                 lbl_windspeed.Text = string.Format("{0} m/s", outPut.wind.speed);
                 lbl_pressure.Text = string.Format("{0} hPa", outPut.main.pressure);
                 lbl_humidity.Text = string.Format("{0 }%", outPut.main.humidity);
@@ -60,11 +57,9 @@ namespace WeatherApp
                 lbl_sunset.Text = String.Format("{0:t}", sunSet);
 
                 string iconName = string.Format("{0}", outPut.weather[0].icon);
-
                 if (iconName.Contains("01"))
                 {
                     lbl_icon.Image = Properties.Resources.Lighter_Heat;
-                    // lbl_desc.Text = string.Format("{0}", outPut.weather[0].description);
                     lbl_desc.Text = string.Format("{0}", "Selge");
 
                 }
@@ -104,15 +99,7 @@ namespace WeatherApp
                     lbl_desc.Text = string.Format("{0}", "Lumi");
 
                 }
-
-
-
-
-
             }
-
-            //translate
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
