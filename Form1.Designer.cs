@@ -164,7 +164,7 @@
             // lbl_humidity
             // 
             this.lbl_humidity.AutoSize = true;
-            this.lbl_humidity.Location = new System.Drawing.Point(180, 0);
+            this.lbl_humidity.Location = new System.Drawing.Point(179, 0);
             this.lbl_humidity.Name = "lbl_humidity";
             this.lbl_humidity.Size = new System.Drawing.Size(70, 25);
             this.lbl_humidity.TabIndex = 3;
@@ -173,7 +173,7 @@
             // lbl_windspeed
             // 
             this.lbl_windspeed.AutoSize = true;
-            this.lbl_windspeed.Location = new System.Drawing.Point(180, 31);
+            this.lbl_windspeed.Location = new System.Drawing.Point(179, 31);
             this.lbl_windspeed.Name = "lbl_windspeed";
             this.lbl_windspeed.Size = new System.Drawing.Size(70, 25);
             this.lbl_windspeed.TabIndex = 4;
@@ -182,7 +182,7 @@
             // lbl_pressure
             // 
             this.lbl_pressure.AutoSize = true;
-            this.lbl_pressure.Location = new System.Drawing.Point(180, 58);
+            this.lbl_pressure.Location = new System.Drawing.Point(179, 58);
             this.lbl_pressure.Name = "lbl_pressure";
             this.lbl_pressure.Size = new System.Drawing.Size(70, 25);
             this.lbl_pressure.TabIndex = 5;
@@ -197,7 +197,7 @@
             this.lbl_City.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lbl_City.Location = new System.Drawing.Point(23, 10);
             this.lbl_City.Name = "lbl_City";
-            this.lbl_City.Size = new System.Drawing.Size(86, 39);
+            this.lbl_City.Size = new System.Drawing.Size(82, 38);
             this.lbl_City.TabIndex = 3;
             this.lbl_City.Text = "Linn";
             // 
@@ -206,7 +206,7 @@
             this.lbl_icon.BackColor = System.Drawing.Color.Transparent;
             this.lbl_icon.BackgroundImage = global::WeatherApp.Properties.Resources.Sun_Behind_Clouds;
             this.lbl_icon.Image = global::WeatherApp.Properties.Resources.Cloud___Lightning;
-            this.lbl_icon.Location = new System.Drawing.Point(239, 135);
+            this.lbl_icon.Location = new System.Drawing.Point(225, 135);
             this.lbl_icon.Name = "lbl_icon";
             this.lbl_icon.Size = new System.Drawing.Size(190, 136);
             this.lbl_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -219,7 +219,7 @@
             this.lbl_temp.BackColor = System.Drawing.Color.Transparent;
             this.lbl_temp.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_temp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_temp.Location = new System.Drawing.Point(263, 232);
+            this.lbl_temp.Location = new System.Drawing.Point(256, 250);
             this.lbl_temp.Name = "lbl_temp";
             this.lbl_temp.Size = new System.Drawing.Size(51, 36);
             this.lbl_temp.TabIndex = 3;
@@ -244,7 +244,7 @@
             this.lbl_desc.BackColor = System.Drawing.Color.Transparent;
             this.lbl_desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_desc.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_desc.Location = new System.Drawing.Point(345, 243);
+            this.lbl_desc.Location = new System.Drawing.Point(257, 292);
             this.lbl_desc.Name = "lbl_desc";
             this.lbl_desc.Size = new System.Drawing.Size(70, 25);
             this.lbl_desc.TabIndex = 9;
@@ -257,7 +257,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(25, 135);
+            this.label1.Location = new System.Drawing.Point(27, 162);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 23);
             this.label1.TabIndex = 10;
